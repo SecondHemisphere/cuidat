@@ -1,0 +1,103 @@
+.formulario-contacto {
+    background-color: #fff;
+    padding: 1.875rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.875rem;
+}
+
+.formulario-contacto h2 {
+    color: var(--color-oscuro);
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.formulario-contacto .campo {
+    margin-bottom: 1.5rem;
+}
+
+.formulario-contacto label {
+    display: block;
+    margin-bottom: 0.3125rem;
+    color: #555;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.25rem;
+    font-size: 1.6rem;;
+    box-sizing: border-box;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+}
+
+.formulario-contacto .boton-enviar {
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.6rem;;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-weight: bold;
+}
+
+.formulario-contacto .boton-enviar:hover {
+    background-color: #2980b9;
+}
+
+.formulario-contacto .error-mensaje {
+    color: var(--color-primario);
+    font-size: 1.4rem;;
+    margin-top: 0.3125rem;
+}
+
+.formulario-contacto .mensaje-enviado,
+.formulario-contacto .mensaje-error {
+    padding: 0.9375rem;
+    border-radius: 0.25rem;
+    margin-top: 1.25rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.formulario-contacto .mensaje-enviado {
+    background-color: #d4edda;
+    color: #155724;
+    border: 0.0625rem solid #c3e6cb;
+}
+
+.formulario-contacto .mensaje-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 0.0625rem solid #f5c6cb;
+}
+
+.formulario-contacto .oculto {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto .campos-pequenos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .formulario-contacto .campo-grande {
+        grid-column: 1 / -1;
+    }
+}
