@@ -1,5 +1,5 @@
 .formulario-contacto {
-    background-color: #fff;
+    background-color: var(--color-formulario-contacto);
     padding: 1.875rem;
     margin-top: 2rem;
     border-radius: 0.5rem;

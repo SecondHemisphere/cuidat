@@ -322,9 +322,28 @@ ol li::marker {
     .encabezado-logo {
       background-color: var(--color-encabezado);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      padding: 1rem;
+      gap: 0rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .logo {
+      height: 6rem;
+    }
+
+    .texto-encabezado {
+      flex: none;
+      width: 100%;
+    }
+
+    .texto-encabezado h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .subtitulo {
+      font-size: 1.4rem;
     }
 }
