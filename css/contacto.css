@@ -103,22 +103,82 @@
 /* Mensajes De Respuesta */
 .mensaje-enviado,
 .mensaje-error {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  border-radius: 1.2rem;
-  display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .mensaje-enviado {
-  background-color: var(--color-oscuro);
-  color: var(--color-exito);
+    background-color: #d4edda;
+    color: var(--color-exito);
+    border: 1px solid var(--color-border-exito);
 }
 
 .mensaje-error {
-  background-color: var(--color-oscuro);
-  color: var(--color-peligro);
+    background-color: #f8d7da;
+    color: var(--color-peligro);
+    border: 1px solid var(--color-border-peligro);
 }
 
 .oculto {
   display: none;
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .contactanos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactanos .texto {
+    max-width: 100%;
+  }
+
+  .contactanos .logo {
+    margin: 0 auto;
+  }
+
+  .campos-pequenos {
+    flex-direction: column;
+  }
+
+  .campo {
+    flex: 1 1 100%;
+  }
+
+  .formulario-contacto {
+    padding: 1.5rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .contactanos h1 {
+    font-size: 1.8rem;
+  }
+
+  .contactanos .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .formulario-contacto h2 {
+    font-size: 1.6rem;
+  }
+
+  .campo label {
+    font-size: 1.4rem;
+  }
+
+  .campo input,
+  .campo textarea {
+    font-size: 1.4rem;
+  }
+
+  .boton-enviar {
+    width: 100%;
+    font-size: 1.3rem;
+  }
 }
