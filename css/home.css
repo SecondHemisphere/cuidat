@@ -1,0 +1,156 @@
+/* Estilos para la guía básica destacada */
+.guia-basica-destacada {
+    background-color: #e9f7f7;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border: 0.1rem solid #bce0e0;
+}
+
+.guia-basica-destacada h2 {
+    color: var(--color-secundario);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.guia-basica-destacada ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.guia-basica-destacada li {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+/* Estilos para la sección de videos destacados */
+.videos-destacados {
+    margin-bottom: 3rem;
+}
+
+.videos-destacados h2 {
+    color: var(--color-oscuro);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.carousel-videos {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.video-card {
+    flex: 0 0 auto;
+    width: 30rem;
+    border: 0.1rem solid #ddd;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.video-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.video-card h3 {
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.video-card a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.video-card a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos para la sección del test interactivo */
+.test-interactivo {
+    background-color: #f9f3e9;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 3rem;
+    border: 0.1rem solid #e6d9c2;
+}
+
+.test-interactivo h2 {
+    color: var(--color-primario);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.test-interactivo p {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.test-interactivo .pregunta {
+    margin-bottom: 1.5rem;
+}
+
+.test-interactivo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.test-interactivo input[type="text"],
+.test-interactivo select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+.test-interactivo button[type="submit"] {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.test-interactivo button[type="submit"]:hover {
+    background-color: #c0392b;
+}
+
+.test-interactivo .oculto {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 0.1rem solid #d4ac0d;
+    background-color: #fdf5e6;
+    border-radius: 0.4rem;
+    font-size: 1.5rem;
+}
+
+.test-interactivo a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.test-interactivo a:hover {
+    text-decoration: underline;
+}
