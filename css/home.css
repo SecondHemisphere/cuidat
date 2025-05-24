@@ -145,8 +145,7 @@
 
 .video-card {
   flex: 0 0 auto;
-  width: 30rem;
-  border: 0.1rem solid #ddd;
+  width: 300px;
   border-radius: 0.8rem;
   overflow: hidden;
   background-color: white;
@@ -160,7 +159,7 @@
 
 .video-card h3 {
   padding: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
 }
 
@@ -173,6 +172,11 @@
 }
 
 /* Test Interactivo */
+.test-interactivo p {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
 .test-interactivo .pregunta {
   margin-bottom: 1.5rem;
 }
@@ -187,7 +191,7 @@
 .test-interactivo select {
   width: 100%;
   padding: 0.8rem;
-  border: 0.1rem solid #ccc;
+  border: 0.1rem solid lightgrey;
   border-radius: 0.4rem;
   box-sizing: border-box;
 }
