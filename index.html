@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-        name="description"
-        content="CuidaT: Guía de primeros auxilios para emergencias comunes."
-    />
-    <meta
-        name="keywords"
-        content="CuidaT, primeros auxilios, emergencia, guía"
-    />
+    <meta name="description" content="CuidaT: Guía de primeros auxilios para emergencias comunes." />
+    <meta name="keywords" content="CuidaT, primeros auxilios, emergencia, guía" />
     <meta name="author" content="Equipo de Primeros Auxilios de CuidaT" />
+    
     <title>CuidaT: Guía de Primeros Auxilios</title>
+
     <link rel="icon" href="image/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navegacion">
+        <nav class="navegacion" role="navigation">
             <div class="contenedor">
                 <a href="index.html" class="logo-nav">
                     <span class="texto-rojo">cui</span><span class="texto-celeste">daT</span>
@@ -33,8 +26,8 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="menu">
-                    <li><a href="index.html" class="menu-activo">Inicio</a></li>
-                    <li><a href="guia.html">Guía</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="guia.html" class="menu-activo" aria-current="page">Guía</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="acerca.html">Acerca de</a></li>
                 </ul>
@@ -149,19 +142,19 @@
     </main>-
 
     <footer>
-      <div class="pie-de-pagina">
-        <div class="seccion-pie contacto">
-          <h3>Contacto</h3>
-            <p><i class="fas fa-envelope icono-pie"></i> <a href="mailto:info@cuidat.com" class="enlace-pie">info@cuidat.com</a></p>
-            <p><i class="fas fa-phone-alt icono-pie"></i> <a href="tel:+593999999999" class="enlace-pie">+593 999 999 999</a></p>
-            <p><i class="fas fa-map-marker-alt icono-pie"></i> <a href="https://www.google.com/maps/place/Guayaquil" target="_blank" class="enlace-pie">Guayaquil, Ecuador</a></p>
+        <div class="pie-de-pagina">
+            <div class="seccion-pie contacto">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-envelope icono-pie"></i> <a href="mailto:info@cuidat.com" class="enlace-pie">info@cuidat.com</a></p>
+                <p><i class="fas fa-phone-alt icono-pie"></i> <a href="tel:+593999999999" class="enlace-pie">+593 999 999 999</a></p>
+                <p><i class="fas fa-map-marker-alt icono-pie"></i> <a href="https://www.google.com/maps/place/Guayaquil" target="_blank" rel="noopener noreferrer" class="enlace-pie">Guayaquil, Ecuador</a></p>
+            </div>
+            <div class="seccion-pie legal-pie">
+                <p><a href="#" class="enlace-pie">Política de Privacidad</a></p>
+                <p><a href="#" class="enlace-pie">Términos de Uso</a></p>
+                <p class="copyright-pie">© 2025 CuidaT. Todos los derechos reservados.</p>
+            </div>
         </div>
-        <div class="seccion-pie legal-pie">
-          <p><a href="#" class="enlace-pie">Política de Privacidad</a></p>
-          <p><a href="#" class="enlace-pie">Términos de Uso</a></p>
-          <p class="copyright-pie">© 2025 CuidaT. Todos los derechos reservados.</p>
-        </div>
-      </div>
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/test.js"></script>

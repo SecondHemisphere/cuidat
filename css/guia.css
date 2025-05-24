@@ -166,7 +166,7 @@
 }
 
 /* Pasos */
-.cuadricula-pasos {
+.grilla-pasos {
   display: grid;
   grid-template-columns: auto;
   gap: 1.5rem;
