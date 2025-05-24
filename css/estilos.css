@@ -133,11 +133,6 @@ body {
   transform: translateY(-0.2rem);
 }
 
-.navegacion .menu a:focus {
-  color: var(--color-secundario);
-  outline: none;
-}
-
 .navegacion .texto-celeste {
   color: var(--color-secundario);
 }
