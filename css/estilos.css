@@ -57,18 +57,6 @@ body {
   padding: 0 1.5rem;
 }
 
-/* Encabezado */
-.encabezado-logo {
-  background-color: var(--color-encabezado);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding-inline-end: 5rem;
-  padding-inline-start: 4rem;
-  padding-block-end: 1rem;
-}
-
 .logo {
   height: 7rem;
   width: auto;
@@ -151,21 +139,16 @@ body {
   color: var(--color-primario);
 }
 
-.navegacion .menu a.activo {
+.navegacion .menu a.menu-activo {
     color: var(--color-acento);
     font-weight: bold;
     border-bottom: 0.2rem solid var(--color-acento);
     padding-bottom: 0.2rem;
 }
 
-.navegacion .menu a.activo:hover {
+.navegacion .menu a.menu-activo:hover {
     color: var(--color-acento);
     transform: none;
-}
-
-.navegacion .menu a.activo:focus {
-    color: var(--color-acento);
-    outline: none;
 }
 
 .logo-nav img {

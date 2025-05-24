@@ -1,6 +1,7 @@
-/* Contactanos */
+/* Contáctanos */
 .contactanos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: white;
@@ -8,7 +9,6 @@
   border-radius: 1.5rem;
   box-shadow: 0 0.4rem 1.2rem var(--color-sombra-caja);
   margin-top: 2rem;
-  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -32,7 +32,7 @@
   margin-right: 1rem;
 }
 
-/* Formulario De Contacto */
+/* Formulario de Contacto */
 .formulario-contacto {
   background-color: white;
   padding: 2rem;
@@ -88,7 +88,7 @@
   margin-top: 0.3rem;
 }
 
-/* Boton Enviar */
+/* Botón Enviar */
 .boton-enviar {
   background-color: var(--color-secundario);
   color: white;
@@ -100,26 +100,26 @@
   margin-top: 1rem;
 }
 
-/* Mensajes De Respuesta */
+/* Mensajes de Respuesta */
 .mensaje-enviado,
 .mensaje-error {
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .mensaje-enviado {
-    background-color: #d4edda;
-    color: var(--color-exito);
-    border: 1px solid var(--color-border-exito);
+  background-color: #d4edda;
+  color: var(--color-exito);
+  border: 1px solid var(--color-border-exito);
 }
 
 .mensaje-error {
-    background-color: #f8d7da;
-    color: var(--color-peligro);
-    border: 1px solid var(--color-border-peligro);
+  background-color: #f8d7da;
+  color: var(--color-peligro);
+  border: 1px solid var(--color-border-peligro);
 }
 
 .oculto {
@@ -160,18 +160,9 @@
     font-size: 1.8rem;
   }
 
-  .contactanos .subtitulo {
-    font-size: 1.5rem;
-  }
-
-  .formulario-contacto h2 {
-    font-size: 1.6rem;
-  }
-
-  .campo label {
-    font-size: 1.4rem;
-  }
-
+  .contactanos .subtitulo,
+  .formulario-contacto h2,
+  .campo label,
   .campo input,
   .campo textarea {
     font-size: 1.4rem;

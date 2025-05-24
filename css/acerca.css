@@ -10,7 +10,6 @@
 
 .acerca-de .contenedor {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
@@ -22,14 +21,14 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.texto-acerca i {
+.texto-acerca i,
+.texto-acerca h2 {
   color: var(--color-oscuro);
 }
 
 .texto-acerca h2 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: var(--color-oscuro);
 }
 
 .texto-acerca h3 i {
@@ -45,9 +44,9 @@
 
 .texto-acerca ul {
   list-style: disc inside;
-  padding: 0;
-  margin: 0;
   font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .texto-acerca li {
@@ -55,8 +54,8 @@
 }
 
 .logo-acerca img {
-  max-width: 25rem;
   width: 100%;
+  max-width: 25rem;
 }
 
 /* Nuestro Equipo */
@@ -71,7 +70,7 @@
 
 .listado-integrantes {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
@@ -116,7 +115,7 @@
 /* Tablets y pantallas medianas */
 @media (max-width: 1024px) {
   .listado-integrantes {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .acerca-de .contenedor {
@@ -128,7 +127,6 @@
   .logo-acerca {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 2rem;
   }
 

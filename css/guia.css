@@ -1,6 +1,4 @@
-/* --------------------------------------------- */
-/* GUÍA PROFESIONAL */
-/* --------------------------------------------- */
+/* Guía Profesional */
 .guia-profesional {
   display: flex;
   justify-content: space-between;
@@ -14,9 +12,7 @@
   gap: 1rem;
 }
 
-/* --------------------------------------------- */
-/* CONTENIDO DE GUÍA */
-/* --------------------------------------------- */
+/* Contenido Guía */
 .contenido-guia {
   background-color: white;
   border-radius: 1.5rem;
@@ -33,9 +29,7 @@
   margin-left: 2rem;
 }
 
-/* --------------------------------------------- */
-/* ACORDEÓN DE EMERGENCIA */
-/* --------------------------------------------- */
+/* Acordeón de Emergencia */
 .seccion-emergencia {
   margin-bottom: 1.5rem;
   border-radius: 0.8rem;
@@ -87,9 +81,7 @@
   font-weight: bold;
 }
 
-/* --------------------------------------------- */
-/* PANEL DE CONTENIDO */
-/* --------------------------------------------- */
+/* Panel de Contenido */
 .panel {
   background-color: var(--color-texto-claro);
   max-height: 0;
@@ -125,9 +117,7 @@
   color: var(--color-primario);
 }
 
-/* --------------------------------------------- */
-/* CAJAS DE ALERTA */
-/* --------------------------------------------- */
+/* Cajas */
 .caja-alerta {
   padding: 0.1rem 2rem;
   margin: 1rem 0;
@@ -155,9 +145,7 @@
   border-color: var(--color-secundario);
 }
 
-/* --------------------------------------------- */
-/* VIDEO */
-/* --------------------------------------------- */
+/* Video */
 .contenedor-video {
   position: relative;
   padding-bottom: 56.25%;
@@ -177,9 +165,7 @@
   border: none;
 }
 
-/* --------------------------------------------- */
-/* GRILLA DE PASOS */
-/* --------------------------------------------- */
+/* Pasos */
 .cuadricula-pasos {
   display: grid;
   grid-template-columns: auto;
@@ -209,9 +195,7 @@
   color: var(--color-secundario);
 }
 
-/* --------------------------------------------- */
-/* ENLACES RÁPIDOS */
-/* --------------------------------------------- */
+/* Enlaces Rápidos */
 .enlaces-rapidos {
   display: flex;
   flex-wrap: wrap;
@@ -235,9 +219,7 @@
   margin-right: 1rem;
 }
 
-/* --------------------------------------------- */
-/* INDICADORES DE GRAVEDAD */
-/* --------------------------------------------- */
+/* Indicadores de Gravedad */
 .indicador-gravedad {
   display: inline-block;
   padding: 0.3rem 0.6rem;
@@ -275,4 +257,90 @@
 .gravedad-emergencia-vital {
   background-color: var(--color-gravedad-emergencia-vital);
   color: var(--color-texto-claro);
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .guia-profesional {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .contenido-guia {
+    padding: 1rem;
+  }
+
+  .panel {
+    padding: 0 0.5rem;
+  }
+
+  .tarjeta-paso {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .enlaces-rapidos {
+    justify-content: center;
+  }
+
+  .enlace-rapido {
+    font-size: 1.4rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .acordeon {
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .acordeon i {
+    margin-right: 1rem;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .guia-profesional {
+    padding: 1rem;
+  }
+
+  .contenido-guia {
+    padding: 0.8rem;
+  }
+
+  .panel p,
+  .panel ul,
+  .panel ol {
+    font-size: 1.4rem;
+  }
+
+  .panel h3,
+  .panel h4 {
+    font-size: 1.6rem;
+  }
+
+  .acordeon {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .cuadricula-pasos {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-paso {
+    font-size: 1.4rem;
+  }
+
+  .enlace-rapido {
+    width: 100%;
+    justify-content: center;
+    padding: 0.8rem;
+  }
+
+  .indicador-gravedad {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
 }
