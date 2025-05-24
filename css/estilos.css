@@ -83,6 +83,10 @@ body {
   color: var(--color-primario);
 }
 
+.texto-blanco {
+  color: white;
+}
+
 /* Navegación */
 .navegacion {
   background-color: var(--color-oscuro);
