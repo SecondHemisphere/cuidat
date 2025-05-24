@@ -24,7 +24,8 @@
   --color-gravedad-emergencia: #e74c3c;
   --color-gravedad-emergencia-vital: #9b59b6;
   --color-formulario-contacto: #fdfafa;
-
+  --color-caja-advertencia: #fff3cd;
+  --color-caja-peligro: #f8d7da;
   --color-rol: #777;
   --color-subtitulo: #555;
 }
