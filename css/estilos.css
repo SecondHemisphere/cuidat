@@ -84,7 +84,7 @@ body {
 }
 
 .texto-blanco {
-  color: white;
+  color: var(--color-texto-claro);
 }
 
 /* Navegación */
