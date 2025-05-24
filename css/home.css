@@ -130,17 +130,17 @@
 }
 
 .carousel-videos::-webkit-scrollbar-track {
-  background: #f0f0f0;
+  background: white;
   border-radius: 0.6rem;
 }
 
 .carousel-videos::-webkit-scrollbar-thumb {
-  background: #999;
+  background: gray;
   border-radius: 0.6rem;
 }
 
 .carousel-videos::-webkit-scrollbar-thumb:hover {
-  background: #667;
+  background: darkgray;
 }
 
 .video-card {
@@ -205,4 +205,62 @@
   cursor: pointer;
   font-weight: bold;
   margin-bottom: 0.3rem;
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
+  .contenedor-hero h1 {
+    font-size: 3rem;
+  }
+
+  .contenedor-hero p {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .boton-principal {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  .video-card {
+    width: 80vw;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .contenedor-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .contenedor-hero p {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .boton-principal {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .video-card {
+    width: 90vw;
+  }
+
+  .guia-destacada h2,
+  .videos-destacados h2,
+  .test-interactivo h2 {
+    font-size: 1.5rem;
+  }
+
+  .guia-destacada li,
+  .test-interactivo p,
+  .test-interactivo label,
+  .test-interactivo input[type="text"],
+  .test-interactivo select,
+  .test-interactivo button[type="submit"],
+  .video-card a {
+    font-size: 1.1rem;
+  }
 }
