@@ -12,7 +12,7 @@
     <link rel="icon" href="image/logo.png" type="image/png" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/acerca.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -36,6 +36,7 @@
     </header>
 
     <main class="contenedor">
+        <!-- Guía Básica De Primeros Auxilios -->
         <article class="guia-basica-destacada">
             <h2><i class="fas fa-clipboard-check"></i> Guía Básica de Primeros Auxilios</h2>
             <p>Sigue estos pasos esenciales en cualquier situación de emergencia:</p>
@@ -49,12 +50,12 @@
             </ol>
             <p><a href="guia.html" class="boton-ver-mas">Ver guía completa</a></p>
         </article>
-
+        <!-- LLamada De Emergencia -->
         <div class="llamada-emergencia">
             <i class="fas fa-phone-alt"></i> En caso de emergencia grave, llama
             inmediatamente al número de emergencias local (911, 112, etc.)
         </div>
-
+        <!-- Videos Destacados -->
         <section class="videos-destacados">
             <h2><i class="fas fa-play-circle"></i> Videos Destacados</h2>
             <div class="carousel-videos">
@@ -85,11 +86,12 @@
                 </div>
             </div>
         </section>
-
+        <!-- Test Rápido -->
         <section class="test-interactivo">
             <h2><i class="fas fa-question-circle"></i> ¿Qué tan preparado estás? - Test Rápido</h2>
             <p>Pon a prueba tus conocimientos básicos de primeros auxilios con este breve test.</p>
             <form id="testPrimerosAuxilios">
+                <!-- Pregunta 1 -->
                 <div class="pregunta">
                     <label for="pregunta1">¿Cuál es la primera acción ante una persona inconsciente?</label>
                     <select id="pregunta1" name="pregunta1">
@@ -99,6 +101,7 @@
                         <option value="daragua">Darle agua</option>
                     </select>
                 </div>
+                <!-- Pregunta 2 -->
                 <div class="pregunta">
                     <label for="pregunta2">¿Cómo se detiene una hemorragia leve?</label>
                     <select id="pregunta2" name="pregunta2">
@@ -108,6 +111,7 @@
                         <option value="agua">Lavando con agua fría</option>
                     </select>
                 </div>
+                <!-- Pregunta 3 -->
                 <div class="pregunta">
                     <label for="pregunta3">¿Cuánto tiempo se recomienda lavar las manos para una buena higiene?</label>
                     <select id="pregunta3" name="pregunta3" required>
@@ -117,6 +121,7 @@
                         <option value="30">30 segundos</option>
                     </select>
                 </div>
+                <!-- Pregunta 4 -->
                 <div class="pregunta">
                     <label for="pregunta4">¿Cuál es el signo principal de un atragantamiento grave en un adulto?</label>
                     <select id="pregunta4" name="pregunta4" required>
@@ -126,6 +131,7 @@
                         <option value="llorar">Llorar o quejarse</option>
                     </select>
                 </div>
+                <!-- Pregunta 5 -->
                 <div class="pregunta">
                     <label for="pregunta5">¿Qué solución se utiliza comúnmente para lavar una herida leve?</label>
                     <select id="pregunta5" name="pregunta5" required>
