@@ -1,186 +1,204 @@
-/* Contáctanos */
-.guia-destacada {
-    background-color: #e9f7f7;
-    padding: 2rem;
-    border-radius: 0.8rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    border: 0.1rem solid #bce0e0;
-}
-
-.guia-destacada h2 {
-    color: var(--color-secundario);
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-.guia-destacada ol {
-    margin-left: 2rem;
-    margin-bottom: 1.5rem;
-}
-
-.guia-destacada li {
-    margin-bottom: 0.8rem;
-    font-size: 1.5rem;
-}
-
-/* Estilos para la sección de videos destacados */
-.videos-destacados {
-    margin-bottom: 3rem;
-}
-
-.videos-destacados h2 {
-    color: var(--color-oscuro);
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-.carousel-videos {
-    display: flex;
-    gap: 2rem;
-    overflow-x: auto;
-}
-
-.video-card {
-    flex: 0 0 auto;
-    width: 30rem;
-    border: 0.1rem solid #ddd;
-    border-radius: 0.8rem;
-    overflow: hidden;
-}
-
-.video-card img {
-    width: 100%;
-    display: block;
-    height: auto;
-}
-
-.video-card h3 {
-    padding: 1rem;
-    font-size: 1.1rem;
-    margin: 0;
-}
-
-.video-card a {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    background-color: #f0f0f0;
-    color: var(--color-secundario);
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.video-card a:hover {
-    background-color: #e0e0e0;
-}
-
-/* Estilos para la sección del test interactivo */
-.test-interactivo {
-    background-color: #f9f3e9;
-    padding: 2rem;
-    border-radius: 0.8rem;
-    margin-bottom: 3rem;
-    border: 0.1rem solid #e6d9c2;
-}
-
-.test-interactivo h2 {
-    color: var(--color-primario);
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-.test-interactivo p {
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.test-interactivo .pregunta {
-    margin-bottom: 1.5rem;
-}
-
-.test-interactivo label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-}
-
-.test-interactivo input[type="text"],
-.test-interactivo select {
-    width: 100%;
-    padding: 0.8rem;
-    border: 0.1rem solid #ccc;
-    border-radius: 0.4rem;
-    box-sizing: border-box;
-    font-size: 1.5rem;
-}
-
-.test-interactivo button[type="submit"] {
-    background-color: var(--color-primario);
-    color: white;
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-    font-size: 1.5rem;
-}
-
-.test-interactivo button[type="submit"]:hover {
-    background-color: #c0392b;
-}
-
-.test-interactivo .oculto {
-    display: none;
-    margin-top: 1rem;
-    padding: 1rem;
-    border: 0.1rem solid #d4ac0d;
-    background-color: #fdf5e6;
-    border-radius: 0.4rem;
-    font-size: 1.5rem;
-}
-
-.test-interactivo a {
-    color: var(--color-primario);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.test-interactivo a:hover {
-    text-decoration: underline;
-}
-
+/* Hero */
 .hero {
+  position: relative;
   background: url('../image/fondo-auxilios.png') no-repeat center center;
-  background-size: cover; /* Muestra toda la imagen sin recortarla */
-  background-color: #000; /* Color de fondo si la imagen no cubre todo */
+  background-size: cover;
   color: white;
   text-align: center;
-  min-height: 300px; /* Altura ajustada para no ocupar toda la pantalla */
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .contenedor-hero {
-  margin: 0 auto;
+  position: relative;
   z-index: 2;
+}
+
+.contenedor-hero h1 {
+  font-size: 4rem;
+}
+
+.contenedor-hero p {
+  font-size: 2.4rem;
+  padding: 2rem 1rem;
 }
 
 .boton-principal {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 30px;
-  background-color: #e53935;
-  color: #fff;
-  border-radius: 8px;
+  margin: 2rem 1rem;
+  padding: 1.2rem 3rem;
+  background-color: var(--color-primario);
+  color: white;
+  border-radius: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Secciones Comunes */
+.guia-destacada,
+.videos-destacados,
+.test-interactivo {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 1.2rem var(--color-sombra-caja);
+  margin: 2rem 0 3rem;
+}
+
+.guia-destacada h2,
+.videos-destacados h2,
+.test-interactivo h2 {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+}
+
+.guia-destacada h2 {
+  color: var(--color-secundario);
+}
+
+.videos-destacados h2 {
+  color: var(--color-oscuro);
+}
+
+.test-interactivo h2 {
+  color: var(--color-primario);
+}
+
+.guia-destacada ol {
+  margin: 1rem 0 1.5rem 2rem;
+}
+
+.guia-destacada li,
+.guia-destacada a,
+.test-interactivo p,
+.test-interactivo label,
+.test-interactivo input[type="text"],
+.test-interactivo select,
+.test-interactivo button[type="submit"],
+.test-interactivo a,
+.video-card a {
+  font-size: 1.5rem;
+}
+
+.guia-destacada li {
+  margin-bottom: 0.8rem;
+}
+
+.guia-destacada a,
+.test-interactivo a,
+.video-card a {
+  text-decoration: none;
+  color: var(--color-secundario);
+}
+
+.test-interactivo a {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.test-interactivo a:hover {
+  text-decoration: underline;
+}
+
+/* Carrusel de Videos */
+.videos-destacados {
+  scroll-behavior: smooth;
+}
+
+.carrusel-videos {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+}
+
+.carousel-videos::-webkit-scrollbar {
+  height: 12px;
+}
+
+.carousel-videos::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 0.6rem;
+}
+
+.carousel-videos::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 0.6rem;
+}
+
+.carousel-videos::-webkit-scrollbar-thumb:hover {
+  background: #667;
+}
+
+.video-card {
+  flex: 0 0 auto;
+  width: 30rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.video-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.video-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.video-card a {
+  padding-left: 1rem;
+}
+
+.video-card a:hover {
+  background-color: white;
+}
+
+/* Test Interactivo */
+.test-interactivo .pregunta {
+  margin-bottom: 1.5rem;
+}
+
+.test-interactivo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.test-interactivo input[type="text"],
+.test-interactivo select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+}
+
+.test-interactivo button[type="submit"] {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}

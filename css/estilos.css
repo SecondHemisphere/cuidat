@@ -125,7 +125,6 @@ body {
   font-size: 1.6rem;
   color: var(--color-texto-claro);
   text-decoration: none;
-  transition: color 0.3s ease-in-out, transform 0.3s ease;
 }
 
 .navegacion .menu a:hover {
