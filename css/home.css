@@ -1,5 +1,5 @@
-/* Estilos para la guía básica destacada */
-.guia-basica-destacada {
+/* Contáctanos */
+.guia-destacada {
     background-color: #e9f7f7;
     padding: 2rem;
     border-radius: 0.8rem;
@@ -8,19 +8,19 @@
     border: 0.1rem solid #bce0e0;
 }
 
-.guia-basica-destacada h2 {
+.guia-destacada h2 {
     color: var(--color-secundario);
     margin-top: 0;
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
-.guia-basica-destacada ol {
+.guia-destacada ol {
     margin-left: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.guia-basica-destacada li {
+.guia-destacada li {
     margin-bottom: 0.8rem;
     font-size: 1.5rem;
 }
@@ -154,3 +154,33 @@
 .test-interactivo a:hover {
     text-decoration: underline;
 }
+
+.hero {
+  background: url('../image/fondo-auxilios.png') no-repeat center center;
+  background-size: cover; /* Muestra toda la imagen sin recortarla */
+  background-color: #000; /* Color de fondo si la imagen no cubre todo */
+  color: white;
+  text-align: center;
+  min-height: 300px; /* Altura ajustada para no ocupar toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-hero {
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.boton-principal {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #e53935;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
