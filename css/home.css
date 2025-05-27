@@ -248,19 +248,16 @@
     width: 90vw;
   }
 
-  .guia-destacada h2,
-  .videos-destacados h2,
-  .test-interactivo h2 {
-    font-size: 1.4rem;
-  }
-
   .guia-destacada li,
+  .guia-destacada h2,
+  .test-interactivo h2,
   .test-interactivo p,
   .test-interactivo label,
   .test-interactivo input[type="text"],
   .test-interactivo select,
   .test-interactivo button[type="submit"],
+  .videos-destacados h2,
   .video-card a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
