@@ -261,6 +261,6 @@
   .test-interactivo select,
   .test-interactivo button[type="submit"],
   .video-card a {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
